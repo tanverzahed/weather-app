@@ -6,45 +6,22 @@
 
 body{
   background-image: url('./sunny.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content{
-  display: flex;
   width: 100vw;
   height: 100vh;
+  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
-.pastDays{
-  justify-self: baseline;
+#forecasts{
+  width: 90vw;
   display: flex;
   flex-direction: row;
-}
-
-.name{
-  position: relative;
-}
-
-.cityname{
-  position: absolute;
-  top: 10%;
-  left: 25%;
-  font-size: 100px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.background{
-  width: 900px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(205, 205, 205, 0.5) 20%, rgba(255, 255, 255, 0) 80%);
-  
-}
-
-.pastDays li{
-  width: 12vw;
-  height: 200px;
-  background-color: rgba(205, 205, 205, 1);
+  justify-content: space-around;
 }
